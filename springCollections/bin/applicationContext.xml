@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <!-- Definition for javaCollection -->
+   <bean id = "springcollectionexample" class = "springCollections.springCollectionExample">
+      
+      <!-- results in a setSpringList(java.util.List) call -->
+      <property name = "springList">
+         <list>
+            <value>Maharashtra</value>
+            <value>Delhi</value>
+            <value>Chennai</value>
+            <value>Banglore</value>
+         </list>
+      </property>
+
+      <!-- results in a setSpringSet(java.util.Set) call -->
+      <property name = "springSet">
+         <set>
+            <value>Pune</value>
+            <value>Thane</value>
+            <value>Satara</value>
+            <value>Kolhapur</value>
+         </set>
+      </property>
+
+      <!-- results in a setSpringMap(java.util.Map) call -->
+      <property name = "springMap">
+         <map>
+            <entry key = "1" value = "USA"/>
+            <entry key = "2" value = "Asia"/>
+            <entry key = "3" value = "Afrika"/>
+            <entry key = "4" value = "Newzwland"/>
+         </map>
+      </property>
+      
+      <!-- results in a setSpringProp(java.util.Properties) call -->
+      <property name = "springProp">
+         <props>
+            <prop key = "one">Land</prop>
+            <prop key = "one">Sea</prop>
+            <prop key = "two">Fire</prop>
+            <prop key = "three">Air</prop>
+            <prop key = "four">Trees</prop>
+         </props>
+      </property>
+   </bean>
+
+</beans>
